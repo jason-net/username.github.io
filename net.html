@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<style>
+body {
+background:#F4C1CA
+}
+
+.title {
+border-style:inset;
+  padding-top: 3px;
+  padding-right: 3px;
+  padding-bottom: 3px;
+  padding-left: 3px;
+background-image:linear-gradient(to right,#00BEBB,#C39DB9);
+font-family:'W95FA',sans-serif;
+color:#fff;
+font-size:24px;
+letter-spacing:5px
+}
+
+.text {
+border-style:inset;
+  padding-top: 3px;
+  padding-right: 3px;
+  padding-bottom: 3px;
+  padding-left: 3px;
+background-color:white;
+font-family:'W95FA',sans-serif;
+color:#fff;
+font-size:12px;
+letter-spacing:5px
+}
+
+.link {
+border-style:inset;
+background-image:linear-gradient(to right,#00BEBB,#C39DB9);
+font-family:'W95FA',sans-serif;
+color:#fff;
+font-size:12px;
+letter-spacing:5px
+}
+
+div {
+border-style:inset;
+background-color:#A3D9CF;
+font-family:'W95FA',sans-serif;
+color:#fff;
+font-size:24px;
+letter-spacing:5px
+}
+
+div2 {
+border-style:inset;
+background-color:transparent;
+font-family:'W95FA',sans-serif;
+color:transparent;
+font-size:24px;
+letter-spacing:5px
+}
+
+.scroll-left {
+height:50px;
+overflow:hidden;
+position:relative
+}
+
+.scroll-left p2 {
+position:absolute;
+width:100%;
+height:100%;
+margin:0;
+line-height:50px;
+text-align:center;
+-moz-transform:translateX(100%);
+-webkit-transform:translateX(100%);
+transform:translateX(100%);
+-moz-animation:scroll-left 30s linear infinite;
+-webkit-animation:scroll-left 30s linear infinite;
+animation:scroll-left 30s linear infinite
+}
+
+@-moz-keyframes scroll-left {
+0% {
+-moz-transform:translateX(100%)
+}
+
+100% {
+-moz-transform:translateX(-100%)
+}
+}
+
+@-webkit-keyframes scroll-left {
+0% {
+-webkit-transform:translateX(100%)
+}
+
+100% {
+-webkit-transform:translateX(-100%)
+}
+}
+
+@keyframes scroll-left {
+0% {
+-moz-transform:translateX(100%);
+-webkit-transform:translateX(100%);
+transform:translateX(100%)
+}
+
+100% {
+-moz-transform:translateX(-100%);
+-webkit-transform:translateX(-100%);
+transform:translateX(-100%)
+}
+}
+
+a:link,a:visited {
+border-style:outset;
+  padding-top: 3px;
+  padding-right: 3px;
+  padding-bottom: 3px;
+  padding-left: 3px;
+    text-decoration: none;
+background-image:#999;
+font-family:'W95FA',sans-serif;
+color:#fff;
+font-size:12px;
+letter-spacing:5px
+}
+
+a:hover,a:active {
+border-style:inset;
+  padding-top: 3px;
+  padding-right: 3px;
+  padding-bottom: 3px;
+  padding-left: 3px;
+    text-decoration: none;
+background-image:#999;
+font-family:'W95FA',sans-serif;
+color:#fff;
+font-size:12px;
+letter-spacing:5px
+}
+
+p {
+border-style:inset;
+  padding-top: 3px;
+  padding-right: 3px;
+  padding-bottom: 3px;
+  padding-left: 3px;
+background-color:#fff;
+font-family:'W95FA',sans-serif;
+color:#000;
+font-size:12px;
+letter-spacing:5px
+}
+
+p2 {
+background-color:transparent;
+font-family:'W95FA',sans-serif;
+color:#000;
+font-size:12px;
+letter-spacing:5px
+}
+
+#content1::after {
+content:"\a";
+white-space:pre
+}
+
+tr{
+border-style: inset
+}
+
+td{
+border-style: inset
+}
+</style>
+
+
+<body>
+
+<div class="title">EDGED BOOKS 1982</div>
+<p2 id="content1"></p2>
+
+<div class="scroll-left">
+<p2>No Announcements :(</p2>
+</div>
+<p2 id="content1"></p2>
+
+<p>Welcome to Edged Books! Click on the links below to see our projects.</p>
+
+<a href="javascript:void(0)">Books</a>
+<a href="javascript:void(0)">Gallery</a>
+<a href="javascript:void(0)">Feedback</a>
+<a href="javascript:void(0)">Sources</a>
+<form>
+<input type="button" value="random link!" onClick="random_3()">
+</form>
+<script type="text/javascript'>
+function random_3(){
+    var myrandom=Math.round(Math.random()*2)
+    var link1="http://www.codingforums.com"
+    var link2="http://www.cssdrive.com"
+    var link3="http://www.dynamicdrive.com"
+    if (myrandom==0)
+        window.location=link1
+    else if (myrandom==1)
+        window.location=link2
+    else if (myrandom==2)
+        window.location=link3
+}
+</script>
+
+</body>
